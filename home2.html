@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Westford International School</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#003366", "secondary": "#dfa100", "accent": "#cc0000", "background-light": "#ffffff",
+                        "background-off": "#f9fafb",
+                        "background-dark": "#101522",
+                    },
+                    fontFamily: {
+                        "sans": ["Lexend", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(90deg, rgba(0, 51, 102, 0.9) 0%, rgba(0, 51, 102, 0.7) 40%, rgba(0, 51, 102, 0.1) 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white antialiased">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="bg-primary text-white text-xs py-2 px-4 border-b border-white/10 hidden md:block">
+            <div class="max-w-[1440px] mx-auto flex justify-between items-center px-4 lg:px-12">
+                <div class="flex gap-4">
+                    <span class="flex items-center gap-1"><span
+                            class="material-symbols-outlined text-[16px]">call</span> +1 (555) 123-4567</span>
+                    <span class="flex items-center gap-1"><span
+                            class="material-symbols-outlined text-[16px]">mail</span> admissions@westford.edu</span>
+                </div>
+                <div class="flex gap-4 font-semibold uppercase tracking-wider">
+                    <a class="hover:text-secondary transition-colors" href="#">Portal</a>
+                    <a class="hover:text-secondary transition-colors" href="#">Careers</a>
+                    <a class="hover:text-secondary transition-colors" href="#">Alumni</a>
+                </div>
+            </div>
+        </div>
+        <nav class="sticky top-0 z-50 flex flex-col bg-white dark:bg-background-dark shadow-sm">
+            <div class="flex w-full justify-center px-4 py-4 lg:px-12">
+                <div class="flex max-w-[1440px] flex-1 items-center justify-between">
+                    <div class="flex items-center gap-3 text-[#111318] dark:text-white">
+                        <div class="size-10 text-primary">
+                            <svg class="h-full w-full" fill="none" viewBox="0 0 48 48"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_319)">
+                                    <path
+                                        d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                        fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_319">
+                                        <rect fill="white" height="48" width="48"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col">
+                            <h2 class="text-xl font-bold leading-none tracking-tight text-primary font-serif">Westford
+                            </h2>
+                            <span class="text-xs uppercase tracking-[0.1em] text-gray-500 font-sans">International
+                                School</span>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-8">
+                        <div class="flex items-center gap-8 font-sans">
+                            <div class="relative group h-full flex items-center">
+                                <a class="flex items-center gap-0.5 text-sm font-medium text-primary hover:text-secondary transition-colors border-b-2 border-transparent hover:border-secondary py-1 cursor-pointer"
+                                    href="#">
+                                    Home
+                                    <span class="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+                                </a>
+                                <div
+                                    class="absolute left-0 top-full pt-2 w-48 invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                                    <div
+                                        class="bg-white dark:bg-background-dark shadow-xl rounded-lg border border-gray-100 dark:border-gray-700 overflow-hidden py-1">
+                                        <a class="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary transition-colors font-medium border-b border-gray-50 dark:border-gray-800 last:border-0"
+                                            href="index.html">
+                                            Home 1
+                                        </a>
+                                        <a class="block px-4 py-2.5 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-primary transition-colors font-medium"
+                                            href="home2.html">
+                                            Home 2
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="text-sm font-medium text-gray-700 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary py-1"
+                                href="#">About Us</a>
+                            <a class="text-sm font-medium text-gray-700 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary py-1"
+                                href="#">Academics</a>
+                            <a class="text-sm font-medium text-gray-700 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary py-1"
+                                href="#">Admissions</a>
+                            <a class="text-sm font-medium text-gray-700 hover:text-primary transition-colors border-b-2 border-transparent hover:border-primary py-1"
+                                href="#">Campus Life</a>
+                        </div>
+                        <button
+                            class="flex h-11 items-center justify-center rounded-full bg-accent px-8 text-sm font-bold text-white transition-all hover:bg-red-700 shadow-md">
+                            Enquire Now
+                        </button>
+                    </div>
+                    <button class="lg:hidden text-[#111318] dark:text-white">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <header class="relative flex w-full flex-col lg:flex-row bg-background-off min-h-[600px] lg:h-[700px]">
+            <div
+                class="w-full lg:w-5/12 flex flex-col justify-center px-6 md:px-12 lg:pl-24 lg:pr-12 py-16 lg:py-0 bg-primary text-white relative z-10">
+                <div class="absolute top-0 left-0 w-full h-2 bg-secondary"></div>
+                <div class="animate-fade-in-up">
+                    <span
+                        class="inline-block py-1 px-3 rounded bg-white/10 text-secondary text-xs font-bold uppercase tracking-wider mb-6 border border-white/20">Excellence
+                        in Education</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Empowering Future <span class="text-secondary italic">Leaders</span>
+                    </h1>
+                    <p class="text-lg text-white/80 mb-8 max-w-md font-light leading-relaxed">
+                        A holistic approach to education in a global environment, nurturing students to become
+                        responsible global citizens.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="h-12 px-8 rounded-full bg-secondary text-primary font-bold hover:bg-yellow-400 transition-colors shadow-lg flex items-center justify-center gap-2">
+                            Apply Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                        <button
+                            class="h-12 px-8 rounded-full border border-white/30 hover:bg-white/10 text-white font-bold transition-colors flex items-center justify-center">
+                            Virtual Tour
+                        </button>
+                    </div>
+                    <div class="mt-12 pt-8 border-t border-white/10 flex gap-8">
+                        <div>
+                            <p class="text-2xl font-serif font-bold text-white">15+</p>
+                            <p class="text-xs text-white/60 uppercase tracking-wider">Years</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-serif font-bold text-white">50+</p>
+                            <p class="text-xs text-white/60 uppercase tracking-wider">Nations</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-serif font-bold text-white">100%</p>
+                            <p class="text-xs text-white/60 uppercase tracking-wider">Pass Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-7/12 relative h-[400px] lg:h-auto bg-gray-200 overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                    data-alt="Students studying on a green campus lawn"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhfilJXTYUNUVTzkgzNRhPce7J7ccqfF5qYU3Yp0yDN3NRQwprlu1iDW_Zsiv_GR19EVIPL86z2ODxs4-Ue1pIPivNwxwZZXHN5ViNKA7DghogzlNh0325Y4c6jyLX-iWMPPk5RdsiYfXkeyzRpIFdyjD-lDkU-ddP9iNJi9UdnwPDRh-LF47J1j1eCFjI4BJYfAzsykSlJtXFR6s7ItsNhT2PB6q6y9TbJZY5u9fhbdrntXFVeemKjWUPsE3hRy8h6d6OgopIhbfO");'>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent lg:hidden"></div>
+                <div
+                    class="hidden lg:block absolute bottom-12 right-12 bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-xl max-w-xs border-l-4 border-secondary">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-primary/10 p-3 rounded-full text-primary">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                        </div>
+                        <div>
+                            <h4 class="font-serif font-bold text-gray-900 text-lg">Open Day</h4>
+                            <p class="text-sm text-gray-600 mt-1">Join us this Saturday for a guided campus tour.</p>
+                            <a class="text-primary text-sm font-bold mt-2 inline-block hover:underline"
+                                href="#">Register Interest →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="relative z-20 -mt-8 px-4 w-full flex justify-center lg:justify-end lg:pr-24">
+            <div
+                class="bg-white dark:bg-[#1a202e] shadow-lg rounded-lg p-2 flex flex-wrap justify-center gap-2 md:gap-4 border border-gray-100 dark:border-gray-700">
+                <a class="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 rounded transition-colors group"
+                    href="#">
+                    <span
+                        class="material-symbols-outlined text-accent group-hover:scale-110 transition-transform">school</span>
+                    <span class="font-bold text-sm text-gray-700 dark:text-gray-200">Admissions</span>
+                </a>
+                <div class="w-px bg-gray-200 h-6 my-auto"></div>
+                <a class="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 rounded transition-colors group"
+                    href="#">
+                    <span
+                        class="material-symbols-outlined text-accent group-hover:scale-110 transition-transform">book</span>
+                    <span class="font-bold text-sm text-gray-700 dark:text-gray-200">Curriculum</span>
+                </a>
+                <div class="w-px bg-gray-200 h-6 my-auto"></div>
+                <a class="flex items-center gap-2 px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 rounded transition-colors group"
+                    href="#">
+                    <span
+                        class="material-symbols-outlined text-accent group-hover:scale-110 transition-transform">payments</span>
+                    <span class="font-bold text-sm text-gray-700 dark:text-gray-200">Fees</span>
+                </a>
+            </div>
+        </div>
+        <section class="py-20 px-4 lg:px-24 bg-background-light">
+            <div class="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-gray-100 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary/10 rounded-full -z-10"></div>
+                    <img alt="Students in a chemistry lab" class="rounded-2xl shadow-xl w-full object-cover h-[400px]"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVfSmCN4U6q56-hcWk9EWUy0fgahVhu9On1bdRB088_O1UDS3QgPI-W1S4bLW84p4VKRCZ0bj_IdnhRoHlFBbLvb6bbFM5KNDSG2nwCX1UAGk2mt794bGx2tW2U2xaduh5TVr7dVjpM29mIu-0ql2-y2kyondddgL82Ubf_i9OLfqp7D8kmSbkL7BdBMb2rR9FSUnwjltueJOQHmafgTD1tGWBk6dg0hFcT9TXYz2u2eg4kdYLf6GSKuTeAv0dvvhleUbme3St2MeP" />
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg max-w-[200px] hidden md:block">
+                        <p class="text-sm font-serif italic text-gray-600">"Education is not the filling of a pail, but
+                            the lighting of a fire."</p>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-secondary font-bold uppercase tracking-wider text-sm mb-2 block">Who We Are</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">Developing Global Citizens for
+                        Tomorrow's World</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Westford provides a comprehensive educational experience focused on academic success and
+                        personal growth. Our pillars of excellence ensure every student finds their path.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+                            <div>
+                                <h4 class="font-bold text-gray-900">World-Class Academics</h4>
+                                <p class="text-gray-500 text-sm">IGCSE and A-Level programs designed to challenge.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Holistic Development</h4>
+                                <p class="text-gray-500 text-sm">Sports, arts, and leadership integrated into daily
+                                    life.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="inline-flex items-center gap-2 text-primary font-bold mt-8 border-b-2 border-primary hover:text-secondary hover:border-secondary transition-colors pb-1"
+                        href="#">
+                        Read Headmaster's Welcome <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-background-off">
+            <div class="max-w-[1440px] mx-auto px-4 lg:px-24">
+                <div class="text-center mb-16">
+                    <span class="text-secondary font-bold uppercase tracking-wider text-sm">Discover Westford</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mt-2">Life at Westford</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded-2xl h-[400px] shadow-lg">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaMytlaNGlKypKquGgnSTpgdPTs52QRYt20UD-f_GoCZ46fckUosKOMT-5JIjaKjyjwIdOhwQRjSi4gcr3wIYo4UT7Egg59LnotF74rldRhKW9RMbfNm1MWEZFj9m4cj6nJYftLaHqRp0sanbJ8wYfB9xg77T31Le03asXLB18SL5H-2RKHzHoOBeBz2fj26405UXUSDWiOIyuFwP2hYPKvpmbrXOHyh3u_mDDcxPj4Mv9qdpxf-ZE5SdzqPcmtASNLWmEhsQlysKJ");'>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="text-white text-2xl font-serif font-bold mb-2">Admissions Process</h3>
+                            <p
+                                class="text-white/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                A transparent and welcoming process to join the Westford family.</p>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-primary hover:bg-white transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative overflow-hidden rounded-2xl h-[400px] shadow-lg md:-mt-8 border-4 border-white">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwvT3HHJM3d9VKGi32hyRTXaLbU9AOV6PKlBuC-235WBr3XUxQij6pjVZwcnMDf-B6t0mUF3r8rzHYPg4fs1HRng9ldcsgThrW8BTobemYshi_pfXboR7HSrXouOI1Ah-dIa2HQmdfhBQjlO7AanAV03gPPxDhV7e3JC-_ZpCx9Cnoreb8SphN01lfZdGL4Xa0ty411-NAht_dtALoRBeKkz4Ka3lNtkKYE5A5-hoWc_Czq7USXyRANVSkH9i9Qy0dKzm4L2On49Ll");'>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <div class="bg-secondary text-primary text-xs font-bold px-2 py-1 rounded w-fit mb-3">
+                                Popular</div>
+                            <h3 class="text-white text-2xl font-serif font-bold mb-2">Student Life</h3>
+                            <p class="text-white/80 text-sm mb-4">Beyond the classroom, we offer a wide range of
+                                extracurricular activities.</p>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-primary hover:bg-secondary transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl h-[400px] shadow-lg">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxNbF8_Bb2mU6KzIltuWT8GkKvg0xenJpZHxg3HoqcMujZ7bQBpxQvw9XpxW91Qv7gVZusOyZJLedWaNDYWtFrHYAFHOEJlTN4ciO-gVScq1BNjjb5CDhqzgIX-W1uBJ6RhDz4BsRxC4onpCIMeUxcO3cCkVtuGZgJ0xfKlSrDv0VgMjH76m87zLuXCZX6R8gGqInqv6R6JAj7lJ6konA4l2omved3RtStBcWLzr_qVG7OUS9GWoCKVZNqhcUClJOv9e1Qba2-0ub5");'>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <h3 class="text-white text-2xl font-serif font-bold mb-2">Arts &amp; Music</h3>
+                            <p
+                                class="text-white/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
+                                Join us for an evening of classical and contemporary performances.</p>
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-primary hover:bg-white transition-colors"
+                                href="#">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 px-4 lg:px-24 bg-white">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex justify-between items-end mb-12">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">Latest from Westford</h2>
+                        <p class="text-gray-500">Stay updated with our latest achievements and events.</p>
+                    </div>
+                    <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors"
+                        href="#">
+                        View All News <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <article
+                        class="col-span-1 md:col-span-2 lg:col-span-2 relative group overflow-hidden rounded-xl h-[350px]">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBr3ogNFpbuJUHIm4ntG-WCK5_glygboLUT3raA8HldNhoDiJVcFb7z3okti5PnItqLKNaqwHD0t7pXufb-TTis9cYKMEFqdCp4Q6w-xUj4ml29mQnJ4qvhxldhB6U5F31sfk9ClhoikHtkggVTfP-xHpnYH4AfEK1t8hTpd07y0WiqchJZyePFYplxseHQv_qlU1qlEXfISuy0OMl6gjx6sT_w3A4vZA2USJp7ejQbAyEClPHCa4tBFWcBGEL4tS5somR-o-LazrkJ");'>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                        <div class="absolute bottom-0 p-6">
+                            <span
+                                class="text-secondary text-xs font-bold uppercase tracking-wider mb-2 block">Academics</span>
+                            <h3
+                                class="text-white text-2xl font-bold leading-tight mb-2 group-hover:text-secondary transition-colors">
+                                Westford Science Fair 2023: Innovating for a Better Tomorrow</h3>
+                            <p class="text-gray-300 text-sm line-clamp-2 mb-4">Our students showcased groundbreaking
+                                projects ranging from renewable energy solutions to advanced robotics.</p>
+                            <span class="text-white/60 text-xs">Oct 24, 2023</span>
+                        </div>
+                    </article>
+                    <article
+                        class="flex flex-col gap-4 group cursor-pointer border border-gray-100 p-4 rounded-xl hover:shadow-lg transition-all">
+                        <div class="w-full aspect-video bg-cover bg-center rounded-lg overflow-hidden relative">
+                            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA90Nj3i14gwLtWf-0xkBMftgCGC6I2alAjJzIaZ3eEq9jdM553ad77y3-uYh_hmFTjRdIwmCs1iE53AMBZ9ZjVvATeH-_kHblrjVLH9QOf00KPQGOmGXrjs3vbxYMorsztZCRO9pCXzT7j633pIBSDG4jvumG9PFPd_9CvQZ4zsadXo9yz-bxy6WVEuQNCaRB5v_sYPy_7Py_0UpDeNNoNKoU0IsSVl3KvQs8-CACvc6InHpp2qJmp9CSRzxs68WsDVC-sZ5Mde-sr");'>
+                            </div>
+                        </div>
+                        <div>
+                            <span
+                                class="text-accent text-xs font-bold uppercase tracking-wider block mb-1">Sports</span>
+                            <h3
+                                class="text-primary text-lg font-bold leading-snug group-hover:text-secondary transition-colors">
+                                Westford Lions Win Regional Football Championship
+                            </h3>
+                            <p class="text-gray-500 text-sm mt-2 line-clamp-2">
+                                Congratulations to our varsity football team for bringing home the regional trophy.
+                            </p>
+                        </div>
+                    </article>
+                    <div
+                        class="bg-primary text-white p-6 rounded-xl flex flex-col justify-between relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-10 bg-white/5 rounded-full -mr-10 -mt-10"></div>
+                        <div>
+                            <span
+                                class="bg-white/20 text-white text-xs font-bold px-2 py-1 rounded inline-block mb-4">Upcoming
+                                Event</span>
+                            <h3 class="text-xl font-bold font-serif mb-2">Winter Symphony</h3>
+                            <p class="text-white/70 text-sm">A Night of Musical Excellence by the Westford Philharmonic
+                                Orchestra.</p>
+                        </div>
+                        <div class="mt-8 border-t border-white/10 pt-4 flex items-center justify-between">
+                            <div>
+                                <span class="block text-2xl font-bold text-secondary">10</span>
+                                <span class="text-xs uppercase">Oct 2023</span>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-full bg-white text-primary flex items-center justify-center hover:bg-secondary transition-colors">
+                                <span class="material-symbols-outlined">calendar_add_on</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary py-12 border-y border-white/10 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10"
+                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
+            </div>
+            <div class="max-w-[1440px] mx-auto px-4 lg:px-24 relative z-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-white/10">
+                    <div class="text-center px-4">
+                        <div class="text-4xl md:text-5xl font-bold text-white font-serif mb-2">1:8</div>
+                        <div class="text-secondary text-sm font-bold uppercase tracking-wider">Teacher Ratio</div>
+                    </div>
+                    <div class="text-center px-4">
+                        <div class="text-4xl md:text-5xl font-bold text-white font-serif mb-2">3</div>
+                        <div class="text-secondary text-sm font-bold uppercase tracking-wider">Curriculums</div>
+                    </div>
+                    <div class="text-center px-4">
+                        <div class="text-4xl md:text-5xl font-bold text-white font-serif mb-2">50+</div>
+                        <div class="text-secondary text-sm font-bold uppercase tracking-wider">Nationalities</div>
+                    </div>
+                    <div class="text-center px-4">
+                        <div class="text-4xl md:text-5xl font-bold text-white font-serif mb-2">100%</div>
+                        <div class="text-secondary text-sm font-bold uppercase tracking-wider">University Acceptance
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative py-24 px-4 flex justify-center bg-background-light overflow-hidden">
+            <div
+                class="max-w-5xl w-full bg-primary rounded-3xl p-8 md:p-16 text-center relative shadow-2xl overflow-hidden">
+                <div
+                    class="absolute top-0 left-0 w-full h-full opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]">
+                </div>
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary rounded-full blur-3xl opacity-20"></div>
+                <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-accent rounded-full blur-3xl opacity-20"></div>
+                <div class="relative z-10 flex flex-col items-center gap-6">
+                    <h2 class="text-white text-3xl md:text-5xl font-serif font-bold tracking-tight">Ready to Join the
+                        Westford Family?</h2>
+                    <p class="text-white/80 text-lg max-w-2xl font-light">
+                        Experience a supportive community where your child will thrive academically and socially.
+                        Applications for the next academic year are now open.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                        <button
+                            class="flex items-center justify-center h-14 px-10 rounded-full bg-secondary text-primary text-lg font-bold shadow-lg hover:bg-white transition-colors">
+                            Apply Now
+                        </button>
+                        <button
+                            class="flex items-center justify-center h-14 px-10 rounded-full bg-transparent border-2 border-white/30 text-white text-lg font-bold hover:bg-white/10 transition-colors">
+                            Contact Admissions
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-[#0b0f19] text-white pt-20 pb-10 border-t border-gray-800">
+            <div class="max-w-[1440px] mx-auto px-4 lg:px-24">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="size-10 text-white">
+                                <svg class="h-full w-full" fill="none" viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-xl font-serif font-bold tracking-tight text-white">Westford</span>
+                                <span class="text-[10px] uppercase tracking-widest text-gray-400">International
+                                    School</span>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Empowering students to become innovative thinkers and responsible global citizens since
+                            2008.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"
+                                href="#"><span class="text-xs">FB</span></a>
+                            <a class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"
+                                href="#"><span class="text-xs">TW</span></a>
+                            <a class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"
+                                href="#"><span class="text-xs">IG</span></a>
+                            <a class="w-8 h-8 rounded bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"
+                                href="#"><span class="text-xs">LN</span></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold font-serif text-lg">Academics</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a class="hover:text-secondary transition-colors" href="#">Early Years</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Primary School</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Secondary School</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Sixth Form</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Curriculum Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold font-serif text-lg">Admissions</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a class="hover:text-secondary transition-colors" href="#">How to Apply</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Tuition &amp; Fees</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Scholarships</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">Book a Tour</a></li>
+                            <li><a class="hover:text-secondary transition-colors" href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h4 class="text-white font-bold font-serif text-lg">Get in Touch</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 text-sm text-gray-400 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary mt-0.5 group-hover:scale-110 transition-transform">location_on</span>
+                                <span>123 Education Lane,<br />Westford City, WC 56789</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-400 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">call</span>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-sm text-gray-400 group">
+                                <span
+                                    class="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">mail</span>
+                                <span>admissions@westford.edu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-gray-500 text-sm">© 2023 Westford International School. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a class="text-gray-500 hover:text-white text-sm transition-colors" href="#">Privacy Policy</a>
+                        <a class="text-gray-500 hover:text-white text-sm transition-colors" href="#">Terms of Use</a>
+                        <a class="text-gray-500 hover:text-white text-sm transition-colors" href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
